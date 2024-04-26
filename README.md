@@ -51,7 +51,7 @@ Je vous envoie un mail demain pour la deuxième étape.
 Avery.
 </details>
 
-<details><summary>Mise en place du dashboard : phase 2</summary>
+<details><summary><b>Mise en place du dashboard : phase 2</b></summary>
 ---
 De : Avery Moreau
 À : Vous
