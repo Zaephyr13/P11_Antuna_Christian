@@ -1,5 +1,7 @@
+/** @format */
+
 import React from 'react'
-import Logo from '../assets/img/argentBankLogo.png'
+import Logo from '../assets/images/argentBankLogo.png'
 import { Link } from 'react-router-dom'
 import '../sass/components/_Header.scss'
 
@@ -17,7 +19,7 @@ function Header() {
                 </Link>
                 <Link className='main-nav-item' to='/SignIn'>
                     <i className='fa fa-user-circle'></i>
-                    <p>Sign In</p>
+                    Sign In
                 </Link>
             </nav>
         </header>
