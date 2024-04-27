@@ -17,10 +17,21 @@ function Header() {
                         alt='Bank Logo'
                     />
                 </Link>
-                <Link className='main-nav-item' to='/SignIn'>
+                <Link className='main-nav-item not-connected' to='/SignIn'>
                     <i className='fa fa-user-circle'></i>
                     Sign In
                 </Link>
+                <div className='connected'>
+                    <Link className='main-nav-item' to='/Profile'>
+                        <i className='fa fa-user-circle' />
+                        {/* A changer lors de la récupération des comptes via API*/}
+                        <p> Tony </p>
+                    </Link>
+                    <Link className='main-nav-item' to='/'>
+                        <i className='fa fa-sign-out' />
+                        <p> Sign out </p>
+                    </Link>
+                </div>
             </nav>
         </header>
     )
