@@ -1,29 +1,28 @@
-import { configureStore } from '@reduxjs/toolkit';
-import { combineReducers } from '@reduxjs/toolkit';
-import { authReducer } from './reducers/auth.reducer.jsx';
-// import { userReducer } from './reducers/user.reducer.jsx';
+/** @format */
+
+import { configureStore } from '@reduxjs/toolkit'
+import { combineReducers } from '@reduxjs/toolkit'
+import { authReducer } from './reducers/auth.reducer.jsx'
 
 export const initialState = {
-    status: "VOID",
+    status: 'VOID',
     isConnected: false,
     user: {
-        id: "",
-        firstname: "",
-        lastname: "",
-        username: "",
+        firstname: '',
+        lastname: '',
+        username: '',
     },
-    token: "",
-    error: null
+    token: '',
+    error: null,
 }
 
 const rootReducer = combineReducers({
-   auth: authReducer,
-   // user: userReducer,
+    auth: authReducer,
 })
 
 const store = configureStore({
     reducer: rootReducer,
-    devTools: true 
+    devTools: true,
 })
 
 export default store
