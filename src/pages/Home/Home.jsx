@@ -3,13 +3,13 @@
 import React from 'react'
 import Banner from '../../components/Banner.jsx'
 import Item from '../../components/Item.jsx'
-import Footer from '../../components/Footer.jsx'
 import iconChat from '../../assets/icons/icon-chat.webp'
 import iconMoney from '../../assets/icons/icon-money.webp'
 import iconSecurity from '../../assets/icons/icon-security.webp'
 import FeatureItemsData from '../../data/FeatureItems.json'
 import '../../sass/pages/_Home.scss'
 
+/* Home page */
 function Home() {
     const imageData = {
         'icon-chat.webp': iconChat,
@@ -23,6 +23,7 @@ function Home() {
                 <Banner />
                 <section className='features'>
                     <h2 className='sr-only'>Features</h2>
+                    {/* Return items from json file with map method */}
                     {FeatureItemsData.map((data) => (
                         <Item
                             key={data.id}
@@ -34,7 +35,6 @@ function Home() {
                     ))}
                 </section>
             </main>
-            <Footer />
         </div>
     )
 }
